@@ -55,7 +55,7 @@
 	},
 	"scripts": {
 		"test": "jest -u --watch --env=jsdom",
-		"test:ci": "CI=true jest -u --env=jsdom --bail",
+		"test:ci": "CI=true jest -u --env=jsdom --bail --passWithNoTests",
 		"start": "yarn build && node --unhandled-rejections=strict dist/index.js",
 		"build": "NODE_ENV=development webpack",
 		"build:ci": "NODE_ENV=production webpack",
