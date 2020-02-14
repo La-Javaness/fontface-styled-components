@@ -1,7 +1,7 @@
 # fontface-styled-components
 
 ![https://img.shields.io/circleci/project/github/Sidnioulz/fontface-styled-components.svg](https://img.shields.io/circleci/project/github/Sidnioulz/fontface-styled-components.svg)
-![https://www.npmjs.com/package/fontface-loader](https://img.shields.io/npm/v/fontface-loader.svg)
+![https://www.npmjs.com/package/fontface-styled-components](https://img.shields.io/npm/v/fontface-styled-components.svg)
 
 A library to generate fonts in ttf, eot, woff and woff2 formats, along with `@font-face`
 instructions in the [styled-components](https://styled-components.com/) format. Inspired by
@@ -29,19 +29,21 @@ A prop is added to let you control the [font-display](https://developer.mozilla.
 
 To generate your fonts and CSS-in-JS files, use and adapt the following code:
 
-    import fontface from 'fontface-styled-components';
+```js
+import fontface from 'fontface-styled-components';
 
-    fontface.run({
-      sourceDir: 'assets/fonts',
-      fontOutputDir: 'dist/fonts',
-      fontsPublicDir: 'https://my.cdn.com/my-project/public/fonts',
-      styledOutputDir: 'dist/src/assets/fontfaces/',
-      forceRefresh: process.env.NODE_ENV === 'production',
-    })
+fontface.run({
+  sourceDir: 'assets/fonts',
+  fontOutputDir: 'dist/fonts',
+  fontsPublicDir: 'https://my.cdn.com/my-project/public/fonts',
+  styledOutputDir: 'dist/src/assets/fontfaces/',
+  forceRefresh: process.env.NODE_ENV === 'production',
+})
+```
 
 To load a font in the DOM of one of your pages, use and adapt the following code:
 
-```
+```js
 import CatamaranBoldFontFace from 'src/assets/fontfaces/CatamaranBoldFontFace.style'
 import CatamaranRegularFontFace from 'src/assets/fontfaces/CatamaranBoldFontFace.style'
 
