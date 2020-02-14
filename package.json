@@ -60,9 +60,9 @@
 		"build": "NODE_ENV=development webpack",
 		"build:ci": "NODE_ENV=production webpack",
 		"prepublishOnly": "yarn test:ci && yarn build:ci",
-		"deploy": "yarn version --patch && yarn publish --registry https://npm.lajavaness.com",
-		"deploy:minor": "yarn version --minor && yarn publish --registry https://npm.lajavaness.com",
-		"deploy:major": "yarn version --major && yarn publish --registry https://npm.lajavaness.com",
+		"deploy": "yarn version --patch && yarn publish",
+		"deploy:minor": "yarn version --minor && yarn publish",
+		"deploy:major": "yarn version --major && yarn publish",
 		"lint": "yarn eslint --ext .js,.jsx,.ts,.tsx src/",
 		"prettier": "node_modules/prettier/bin-prettier.js \"*/**/*.js\" --ignore-path ./.prettierignore --check"
 	},
