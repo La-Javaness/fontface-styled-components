@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/fontface-styled-components
+    docker:
+      - image: circleci/node:4.8.1
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-yarn
+          command: yarn
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules

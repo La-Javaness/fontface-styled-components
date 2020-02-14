@@ -1,0 +1,33 @@
+# Build
+build/
+dist/
+
+# Dependencies
+/node_modules
+
+# Misc
+.DS_STORE
+
+# .env
+.env.dev
+.env.prod
+
+# NPM
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Webstorm
+.idea/
+*.iml
+
+# Atom
+.save.cson
+
+# Jest
+coverage/
+__snapshots__/
+
+# Cypress
+cypress/videos/

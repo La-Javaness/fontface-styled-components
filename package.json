@@ -1,0 +1,121 @@
+{
+	"name": "fontface-styled-components",
+	"version": "0.1.0",
+	"description": "A script that turns a TTF font into a @font-face declaration for styled-components, derived from Sjors Snoeren's fontface-loader.",
+	"license": "MIT",
+	"author": "Steve Dodier-Lazaro <sidnioulz@gmail.com>",
+	"main": "lib/main.js",
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sidnioulz/fontface-styled-components.git"
+	},
+	"keywords": [
+		"font",
+		"fontface",
+		"styled-components"
+	],
+	"bugs": {
+		"url": "https://github.com/sidnioulz/fontface-styled-components/issues"
+	},
+	"homepage": "https://github.com/sidnioulz/fontface-styled-components#readme",
+	"devDependencies": {
+		"@babel/plugin-transform-modules-commonjs": "^7.8.3",
+		"@commitlint/cli": "^8.2.0",
+		"@commitlint/config-conventional": "^8.2.0",
+		"@commitlint/prompt-cli": "^8.2.0",
+		"@semantic-release/changelog": "^3.0.6",
+		"@semantic-release/commit-analyzer": "^6.3.3",
+		"@semantic-release/git": "^7.0.18",
+		"@semantic-release/npm": "^5.3.5",
+		"@semantic-release/release-notes-generator": "^7.3.5",
+		"css-loader": "^3.4.2",
+		"eslint": "^6.1.0",
+		"eslint-config-airbnb": "^18.0.1",
+		"eslint-config-prettier": "^6.9.0",
+		"eslint-loader": "2.2.1",
+		"eslint-plugin-flowtype": "3.13.0",
+		"eslint-plugin-import": "2.18.2",
+		"eslint-plugin-prettier": "^3.1.2",
+		"husky": "^4.2.1",
+		"jest": "^25.1.0",
+		"prettier": "^1.16.4",
+		"semantic-release": "^15.14.0",
+		"webpack": "^4.41.5",
+		"webpack-cli": "^3.3.10"
+	},
+	"dependencies": {
+		"mkdirp": "^1.0.3",
+		"ttf2eot": "^2.0.0",
+		"ttf2woff": "^2.0.1",
+		"ttf2woff2": "^2.0.3",
+		"ttfinfo": "^0.2.0"
+	},
+	"scripts": {
+		"test": "jest -u --watch --env=jsdom",
+		"test:ci": "CI=true jest -u --env=jsdom --bail",
+		"start": "yarn build && node --unhandled-rejections=strict dist/index.js",
+		"build": "NODE_ENV=development webpack",
+		"build:ci": "NODE_ENV=production webpack",
+		"prepublishOnly": "yarn test:ci && yarn build:ci",
+		"deploy": "yarn version --patch && yarn publish --registry https://npm.lajavaness.com",
+		"deploy:minor": "yarn version --minor && yarn publish --registry https://npm.lajavaness.com",
+		"deploy:major": "yarn version --major && yarn publish --registry https://npm.lajavaness.com",
+		"lint": "yarn eslint --ext .js,.jsx,.ts,.tsx src/",
+		"prettier": "node_modules/prettier/bin-prettier.js \"*/**/*.js\" --ignore-path ./.prettierignore --check"
+	},
+	"jest": {
+		"roots": [
+			"<rootDir>/lib"
+		],
+		"setupFilesAfterEnv": [
+			"<rootDir>/lib/setupTests.js"
+		],
+		"testMatch": [
+			"**/__tests__/**/*.test.+(ts|tsx|js)",
+			"**/?(*.)+(spec|test).+(ts|tsx|js)"
+		],
+		"modulePaths": [
+			"<rootDir>/lib",
+			"<rootDir>/node_modules"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn test:ci && yarn prettier",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"release": {
+		"plugins": [
+			[
+				"@semantic-release/commit-analyzer",
+				{
+					"preset": "angular",
+					"releaseRules": [
+						{
+							"type": "docs",
+							"scope": "README",
+							"release": "patch"
+						},
+						{
+							"type": "refactor",
+							"release": "patch"
+						},
+						{
+							"type": "style",
+							"release": "patch"
+						}
+					]
+				}
+			],
+			"@semantic-release/release-notes-generator",
+			"@semantic-release/npm",
+			"@semantic-release/changelog",
+			"@semantic-release/git"
+		],
+		"branch": "master"
+	}
+}
