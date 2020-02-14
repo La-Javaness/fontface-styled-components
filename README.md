@@ -62,19 +62,19 @@ CSS-in-JS file being generated:
 ```js
 import { createGlobalStyle } from 'styled-components'
 
-export const CatamaranBoldFontFace = createGlobalStyle\`
-@font-face {
-  font-display: ${props => props.fontDisplay || 'auto'};
-  font-family: 'Catamaran';
-  font-weight: 700;
-  font-style: normal;
-  src: local('Catamaran'),
-      url('/public/fonts/Catamaran-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/public/fonts/Catamaran-Bold.woff2') format('woff2'),
-      url('/public/fonts/Catamaran-Bold.ttf')  format('truetype'),
-      url('/public/fonts/Catamaran-Bold.woff') format('woff');
-}
-\`
+export const CatamaranBoldFontFace = createGlobalStyle`
+  @font-face {
+    font-display: ${props => props.fontDisplay || 'auto'};
+    font-family: 'Catamaran';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Catamaran'),
+        url('/public/fonts/Catamaran-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Catamaran-Bold.woff2') format('woff2'),
+        url('/public/fonts/Catamaran-Bold.ttf')  format('truetype'),
+        url('/public/fonts/Catamaran-Bold.woff') format('woff');
+  }
+`
 
 export default { CatamaranBoldFontFace }
 ```
