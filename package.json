@@ -22,7 +22,11 @@
 	},
 	"homepage": "https://github.com/sidnioulz/fontface-styled-components#readme",
 	"devDependencies": {
+		"@babel/core": "^7.8.4",
+		"@babel/plugin-proposal-export-default-from": "^7.8.3",
 		"@babel/plugin-transform-modules-commonjs": "^7.8.3",
+		"@babel/polyfill": "^7.8.3",
+		"@babel/preset-env": "^7.8.4",
 		"@commitlint/cli": "^8.3.4",
 		"@commitlint/config-conventional": "^8.3.4",
 		"@commitlint/prompt-cli": "^8.3.4",
@@ -31,6 +35,8 @@
 		"@semantic-release/git": "^7.0.18",
 		"@semantic-release/npm": "^5.3.5",
 		"@semantic-release/release-notes-generator": "^7.3.5",
+		"babel-eslint": "^10.0.3",
+		"babel-loader": "^8.0.6",
 		"css-loader": "^3.4.2",
 		"eslint": "^6.1.0",
 		"eslint-config-airbnb": "^18.0.1",
@@ -80,7 +86,10 @@
 		"modulePaths": [
 			"<rootDir>/lib",
 			"<rootDir>/node_modules"
-		]
+		],
+		"transform": {
+			"^.+\\.jsx?$": "babel-jest"
+		}
 	},
 	"husky": {
 		"hooks": {

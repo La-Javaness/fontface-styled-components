@@ -13,5 +13,14 @@ module.exports = {
 		library: '',
 		libraryTarget: 'commonjs',
 	},
+	module: {
+		rules: [
+			{
+				test: /\.jsx?$/,
+				exclude: /node_modules/,
+				loader: 'babel-loader',
+			},
+		],
+	},
 	mode: process.env.NODE_ENV || 'development',
 }
