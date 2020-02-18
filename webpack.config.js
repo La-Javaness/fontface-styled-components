@@ -7,6 +7,13 @@ module.exports = {
 	node: {
 		__dirname: true,
 	},
+	externals: {
+		mkdirp: 'mkdirp',
+		ttf2eot: 'ttf2eot',
+		ttf2woff: 'ttf2woff',
+		ttf2woff2: 'ttf2woff2',
+		ttfinfo: 'ttfinfo',
+	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'index.js',
