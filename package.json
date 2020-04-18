@@ -52,6 +52,7 @@
 		"webpack-cli": "^3.3.10"
 	},
 	"dependencies": {
+		"chalk": "^4.0.0",
 		"mkdirp": "^1.0.3",
 		"ttf2eot": "^2.0.0",
 		"ttf2woff": "^2.0.1",

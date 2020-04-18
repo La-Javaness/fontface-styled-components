@@ -117,3 +117,9 @@ fonts for large Web projects can significantly impact build times. We recommend
 you always enable this flag for production builds.
 
 **Default**: `false`
+
+### quiet:
+
+A flag to prevent outputting info and warnings.
+
+**Default**: `false`
