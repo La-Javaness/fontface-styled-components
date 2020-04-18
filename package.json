@@ -69,7 +69,7 @@
 		"deploy": "yarn version --patch && yarn publish",
 		"deploy:minor": "yarn version --minor && yarn publish",
 		"deploy:major": "yarn version --major && yarn publish",
-		"lint": "yarn eslint --ext .js,.jsx,.ts,.tsx src/",
+		"lint": "yarn eslint --ext .js,.jsx,.ts,.tsx lib/",
 		"prettier": "node_modules/prettier/bin-prettier.js \"*/**/*.js\" --ignore-path ./.prettierignore --check"
 	},
 	"jest": {
