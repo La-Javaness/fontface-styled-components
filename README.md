@@ -1,6 +1,6 @@
 # fontface-styled-components
 
-![https://img.shields.io/circleci/project/github/Sidnioulz/fontface-styled-components.svg](https://img.shields.io/circleci/project/github/Sidnioulz/fontface-styled-components.svg)
+![https://img.shields.io/circleci/project/github/La-Javaness/fontface-styled-components.svg](https://img.shields.io/circleci/project/github/La-Javaness/fontface-styled-components.svg)
 ![https://www.npmjs.com/package/fontface-styled-components](https://img.shields.io/npm/v/fontface-styled-components.svg)
 
 A library to generate fonts in ttf, eot, woff and woff2 formats, along with `@font-face`
