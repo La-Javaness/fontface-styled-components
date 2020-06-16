@@ -10,7 +10,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/sidnioulz/fontface-styled-components.git"
+		"url": "git+https://github.com/La-Javaness/fontface-styled-components.git"
 	},
 	"keywords": [
 		"font",
@@ -18,9 +18,9 @@
 		"styled-components"
 	],
 	"bugs": {
-		"url": "https://github.com/sidnioulz/fontface-styled-components/issues"
+		"url": "https://github.com/La-Javaness/fontface-styled-components/issues"
 	},
-	"homepage": "https://github.com/sidnioulz/fontface-styled-components#readme",
+	"homepage": "https://github.com/La-Javaness/fontface-styled-components#readme",
 	"devDependencies": {
 		"@babel/core": "^7.8.4",
 		"@babel/plugin-proposal-export-default-from": "^7.8.3",
