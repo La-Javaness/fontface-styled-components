@@ -109,6 +109,13 @@ Each source font file will have its own CSS-in-JS file.
 
 **Default**: `'dist/src/fontfaces/'`
 
+### allowEmpty:
+
+A flag to allow an empty input directory. Useful for when you use `fontface-styled-components` in a programmatic environment. If `false`, an error will be thrown when
+no fonts are found in the input directory.
+
+**Default**: `false`
+
 ### forceRefresh:
 
 A flag to force the regeneration of all input fonts, even when they're already
