@@ -31,3 +31,4 @@ __snapshots__/
 
 # Cypress
 cypress/videos/
+.env
