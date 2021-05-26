@@ -15,6 +15,9 @@ The `styled-components` [createGlobalStyle](https://styled-components.com/docs/a
 helper function is used to allow you to import fonts in your DOM where you need them.
 A prop is added to let you control the [font-display](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) CSS property of the `@font-face`, so that you can optimise the loading order of your fonts programmatically (at least in SSR contexts).
 
+For added convenience, this library can also generate individual CSS files that load a single `@font-face`, as well as SCSS files
+that load a single `@font-face` and for which the [font-display](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) CSS property can be controlled via a [`@use with` at-rule](https://sass-lang.com/documentation/at-rules/use#configuration).
+
 ## Installing
 
 **npm**
@@ -102,12 +105,66 @@ Path of the fonts in your production server, which will be used in your
 
 **Default**: `'/public/fonts/'`
 
+### withStyledComponents:
+
+Whether to generate @fontface files for styled-components.
+
+**Default**: `true`
+
 ### styledOutputDir:
 
 Path to the destination folder where to write CSS-in-JS files to.
 Each source font file will have its own CSS-in-JS file.
 
 **Default**: `'dist/src/fontfaces/'`
+
+### withCSS:
+
+Whether to generate vanilla CSS @fontface files.
+
+**Default**: `false`
+
+### cssOutputDir:
+
+Path to the destination folder where to write CSS @fontface declaration files to.
+Each source font file will have its own CSS file.
+
+**Default**: `'dist/src/fontfaces/'`
+
+### withSCSS:
+
+Whether to generate SCSS mixin files for each font.
+
+**Default**: `false`
+
+### scssOutputDir:
+
+Path to the destination folder where to write SCSS mixins to.
+Each source font file will have its own SCSS file.
+
+**Default**: `'dist/src/fontfaces/'`
+
+### withLocal:
+
+A flag to add a local source to @fontface declarations. Only recommended when your
+project is to be deployed on B2B environments or point of sale devices where you can
+ensure the local font is identical to the one you intend to serve, as they often vary
+on consumer devices.
+
+**Default**: `true` for backward compatibility, but we recommend you set it to `false`
+
+### fontDisplay:
+
+If set, applies a font-display property to *all* @fontface files indiscriminately.
+This is primarily intended if you want to set a pattern that you'll replace with your
+own logic post-build, or if you want to set a default and to manually edit specific
+@fontface files.
+
+If unset, `'auto'` will be used by default for CSS files. For CSS-in-JS files, a
+template literal parameter will be injected, that first reads `props.fontDisplay`,
+and that returns `'auto'` if that prop is unset.
+
+**Default**: `null`
 
 ### allowEmpty:
 
