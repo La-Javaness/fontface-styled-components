@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/La-Javaness/fontface-styled-components/compare/v1.0.0...v1.1.0) (2021-05-26)
+
+
+### Features
+
+* Add CSS and SCSS output support ([4279dc2](https://github.com/La-Javaness/fontface-styled-components/commit/4279dc2cc17a25e0d359a3f626bb786da7746872))
+
 # [1.0.0](https://github.com/La-Javaness/fontface-styled-components/compare/v0.2.5...v1.0.0) (2020-06-16)
 
 
