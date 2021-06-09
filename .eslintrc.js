@@ -7,6 +7,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'prettier/prettier': ['error']
+    'prettier/prettier': ['error'],
+    'no-restricted-syntax': 0
   },
 }

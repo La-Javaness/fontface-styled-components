@@ -28,6 +28,20 @@ that load a single `@font-face` and for which the [font-display](https://develop
 
     yarn add -D fontface-styled-components
 
+### Optional Dependencies
+
+* [FontForge](https://fontforge.org/)
+
+## Input Format Support
+
+### TrueType
+
+Supported by default.
+
+### OpenType
+
+You must install [FontForge](https://fontforge.org/) and have the `fontforge` binary in your `$PATH`. If it is installed, a conversion script will convert OpenType fonts to TrueType as part of the build process.
+
 ## Usage:
 
 To generate your fonts and CSS-in-JS files, use and adapt the following code:
