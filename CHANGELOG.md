@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/La-Javaness/fontface-styled-components/compare/v1.1.0...v1.2.0) (2021-06-09)
+
+
+### Features
+
+* Add OTF input file support ([6338701](https://github.com/La-Javaness/fontface-styled-components/commit/6338701b5988ac5e73a6a7ac12e4d4fb26f3dd26))
+
 # [1.1.0](https://github.com/La-Javaness/fontface-styled-components/compare/v1.0.0...v1.1.0) (2021-05-26)
 
 
