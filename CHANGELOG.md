@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/La-Javaness/fontface-styled-components/compare/v1.2.0...v1.2.1) (2021-06-21)
+
+
+### Bug Fixes
+
+* Ensure otf-converted files are always included as sources ([c5c2509](https://github.com/La-Javaness/fontface-styled-components/commit/c5c2509b47ddaf2540550cbc54b0560fad350f52))
+
 # [1.2.0](https://github.com/La-Javaness/fontface-styled-components/compare/v1.1.0...v1.2.0) (2021-06-09)
 
 
