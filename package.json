@@ -53,12 +53,12 @@
 		"webpack-cli": "^4.7.2"
 	},
 	"dependencies": {
-		"chalk": "^4.0.0",
+		"chalk": "^4.1.2",
 		"execa": "^5.1.1",
-		"mkdirp": "^1.0.3",
-		"ttf2eot": "^2.0.0",
-		"ttf2woff": "^2.0.2",
-		"ttf2woff2": "^4.0.2",
+		"mkdirp": "^1.0.4",
+		"ttf2eot": "^3.0.0",
+		"ttf2woff": "^3.0.0",
+		"ttf2woff2": "^4.0.4",
 		"ttfinfo": "^0.2.0"
 	},
 	"scripts": {
