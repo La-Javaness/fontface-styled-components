@@ -8,20 +8,6 @@
 # [1.3.0](https://github.com/La-Javaness/fontface-styled-components/compare/v1.2.1...v1.3.0) (2021-08-04)
 
 
-### Features
-
-* **deps:** Force release with updated dependencies for security reasons ([a93fde9](https://github.com/La-Javaness/fontface-styled-components/commit/a93fde9ab283d878cc1764fc577a53b06f945e03))
-
-# [1.3.0](https://github.com/La-Javaness/fontface-styled-components/compare/v1.2.1...v1.3.0) (2021-08-04)
-
-
-### Features
-
-* **deps:** Force release with updated dependencies for security reasons ([a93fde9](https://github.com/La-Javaness/fontface-styled-components/commit/a93fde9ab283d878cc1764fc577a53b06f945e03))
-
-## [1.2.1](https://github.com/La-Javaness/fontface-styled-components/compare/v1.2.0...v1.2.1) (2021-06-21)
-
-
 ### Bug Fixes
 
 * Ensure otf-converted files are always included as sources ([c5c2509](https://github.com/La-Javaness/fontface-styled-components/commit/c5c2509b47ddaf2540550cbc54b0560fad350f52))
@@ -51,6 +37,6 @@
 
 ### BREAKING CHANGES
 
-* File names have changed after this release. You must 
-now import fontface files with a camel-case name instead of the original 
+* File names have changed after this release. You must
+now import fontface files with a camel-case name instead of the original
 font file name.
