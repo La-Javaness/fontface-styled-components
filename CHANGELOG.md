@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/La-Javaness/fontface-styled-components/compare/v1.3.0...v1.3.1) (2022-01-03)
+
+
+### Bug Fixes
+
+* Use extended family name in priority (namerecord 16) ([ef29aa2](https://github.com/La-Javaness/fontface-styled-components/commit/ef29aa20116396e1571b9273c85504ffb8827d8b))
+
 # [1.3.0](https://github.com/La-Javaness/fontface-styled-components/compare/v1.2.1...v1.3.0) (2021-08-04)
 
 
