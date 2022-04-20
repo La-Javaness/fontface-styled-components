@@ -1,3 +1,5 @@
+## [1.3.2](https://github.com/La-Javaness/fontface-styled-components/compare/v1.3.1...v1.3.2) (2022-04-20)
+
 ## [1.3.1](https://github.com/La-Javaness/fontface-styled-components/compare/v1.3.0...v1.3.1) (2022-04-20)
 
 
