@@ -1,6 +1,6 @@
 {
 	"name": "fontface-styled-components",
-	"version": "1.3.3",
+	"version": "1.3.4",
 	"description": "A script that turns a TTF or OTF font into a @font-face declaration for styled-components, derived from Sjors Snoeren's fontface-loader.",
 	"license": "MIT",
 	"author": "La Javaness <dev@lajavaness.com>",
